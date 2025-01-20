@@ -267,7 +267,7 @@ function SelectedMovieDetails({
       setIsLoading(true);
 
       const res = await axios.get(
-        `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedMovieId}`
+        `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedMovieId}`
       );
       setMovieData(res.data);
       setIsLoading(false);
